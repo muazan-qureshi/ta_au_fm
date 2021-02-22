@@ -1,0 +1,74 @@
+divisma
+
+database 'divisma'
+
+
+Table 1: Role types
+create TABLE roletype
+(
+	id int PRIMARY KEY AUTO_INCREMENT,
+    role varchar(50)
+)
+
+Table 2:cp status
+CREATE TABLE cpstatus
+(
+	id int AUTO_INCREMENT PRIMARY KEY,
+    status varchar(20)
+)
+
+Table 3: userstatus
+create table userstatus
+(
+	id int AUTO_INCREMENT PRIMARY KEY,
+    status varchar(50)
+)
+
+Table 4: Category
+CREATE TABLE category
+(
+	id int AUTO_INCREMENT PRIMARY KEY,
+    name varchar(50),
+    createby int,
+    ceateDT timestamp
+)
+
+
+Table 5: users
+create TABLE users
+(
+	id int AUTO_INCREMENT PRIMARY KEY,
+    fullname varchar(50),
+    username varchar(50),
+    email varchar(50),
+    phone varchar(20),
+    password varchar(50),
+    gender varchar(10),
+    dob date,
+    userstatus int,
+    roletype int,
+    createDT timestamp,
+    address varchar(500),
+    image varchar(200)
+)
+
+Table 6: products
+create TABLE products
+(
+	id int AUTO_INCREMENT PRIMARY KEY,
+    name varchar(200),
+    code varchar(50),
+    description varchar(500),
+    stock int,
+    buyprice int,
+    saleprice int,
+    category int, 
+    cpstatus int,
+    createDT timestamp,
+	createby int,
+    image varchar(1000)
+)
+
+Table 7: Customers
+create TABLE customers ( id int AUTO_INCREMENT PRIMARY KEY, fullname varchar(50), username varchar(50), email varchar(50), phone varchar(20), password varchar(50), gender varchar(10), dob date, userstatus int, createDT timestamp, address varchar(500) )
+
