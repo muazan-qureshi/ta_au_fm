@@ -42,7 +42,16 @@ class ta_au_fy
     $query = mysqli_query($this->connection(), $sql);
     return $query;
   }
+  //
 
+  // function for getting visitors query
+  function visitor_query()
+  {
+    $sql = "SELECT * from visitorquery";
+    $query = mysqli_query($this->connection(), $sql);
+    return $query;
+  }
+  // visitor query function end here
 
 
 
