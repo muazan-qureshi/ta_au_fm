@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Feb 25, 2021 at 05:37 AM
+-- Generation Time: Mar 01, 2021 at 02:31 AM
 -- Server version: 10.4.17-MariaDB
 -- PHP Version: 8.0.0
 
@@ -107,7 +107,8 @@ CREATE TABLE `visitorquery` (
 
 INSERT INTO `visitorquery` (`id`, `name`, `email`, `subject`, `message`, `createDT`) VALUES
 (1, 'Ahmed Muazan', 'ahmedmuazan1@gmail.com', 'Agent', 'An Agent Named Shahzaib Khan Afridi is not resoonsible to his work.\r\nRegards Ahmed Muazan.', '2021-02-24 17:31:33'),
-(2, 'Shahzaib Khan Afridi', 'shaxi66221@gmail.com', 'My Report', 'Dear gdfugdu fg uyguf8 fdujhfjh jv8 eziuo;slddf\r\njdfjoweiro idfy9e8 xiuh98 ihxihvkljnfr98y9 9 shdfihknkv cnoa9hinsnkzkh snnjkdnjfd fdkjnkf dskfhf  kfkjnfiewkoiwerq hqpohi hihihn oi hoiqw98o nk iohifhijhd  ish ihk   hfdkhifhi', '2021-02-25 03:08:13');
+(2, 'Shahzaib Khan Afridi', 'shaxi66221@gmail.com', 'My Report', 'Dear gdfugdu fg uyguf8 fdujhfjh jv8 eziuo;slddf\r\njdfjoweiro idfy9e8 xiuh98 ihxihvkljnfr98y9 9 shdfihknkv cnoa9hinsnkzkh snnjkdnjfd fdkjnkf dskfhf  kfkjnfiewkoiwerq hqpohi hihihn oi hoiqw98o nk iohifhijhd  ish ihk   hfdkhifhi', '2021-02-25 03:08:13'),
+(3, 'Muhammad Noman Ayub', 'nomanayub@gmail.com', 'Booking a Trip ', 'Hello Dear Manger I want to book a trip from karachi to Malta for my business purpose so kindly please help me in booking a trip', '2021-02-28 05:05:52');
 
 --
 -- Indexes for dumped tables
@@ -159,7 +160,7 @@ ALTER TABLE `agents`
 -- AUTO_INCREMENT for table `visitorquery`
 --
 ALTER TABLE `visitorquery`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
